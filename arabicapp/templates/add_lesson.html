@@ -20,6 +20,8 @@
     <link rel="stylesheet" type="text/css" href="assets/lib/jqvmap/jqvmap.min.css"/>
     <link rel="stylesheet" type="text/css" href="assets/lib/datetimepicker/css/bootstrap-datetimepicker.min.css"/> -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css"/>
+
+
   </head>
   <body>
     <div class="be-wrapper be-fixed-sidebar">
@@ -71,44 +73,191 @@
       
       <div class="be-content">
         <div class="page-head">
-          <h2 class="page-head-title">Timeline</h2>
+          <h2 class="page-head-title">Lesson <span id="lesson_number"> 1</span></h2>
           <ol class="breadcrumb">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Pages</a></li>
-            <li class="active">Timeline</li>
+            <li><a href="#">Modules</a></li>
+            <li><a href="#">Listening</a></li>
+            <li class="active">Lesson <span id="lesson_number"> 1</span></li>
           </ol>
         </div>
         
 
         <div class="main-content container-fluid">
-          <form id="my-awesome-dropzone" action="assets/lib/dropzone/upload.php" class="dropzone">
-            <div class="dz-message">
-              <div class="icon"><span class="mdi mdi-cloud-upload"></span></div>
-              <h2>Drag and Drop files here</h2><span class="note">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>
+          
+          <button class="btn btn-rounded btn-space btn-primary" onclick="uploaditem()"><i class="icon icon-left mdi mdi-cloud-done"></i> Upload an item</button>
+          <button class="btn btn-rounded btn-space btn-danger"><i class="icon icon-left mdi mdi-alert-circle"></i> Delete an Item</button>
+          <button class="btn btn-rounded btn-space btn-success" onclick="searchitem()"><i class="icon icon-left mdi mdi-check"></i> Search an Item</button>
+          
+          
+          <div class="input-group xs-mb-15" id="searchcontainer">
+            <input type="text" class="form-control"><span class="input-group-btn">
+              <button type="button" class="btn btn-primary">Go!</button></span>
+          </div>
+
+          <div id="uploadcontainer">
+            <div class="panel-body">
+              <div class="input-group input-group-sm xs-mb-15"><span class="input-group-addon">Name</span>
+                <input type="text" placeholder="Name" class="form-control">
+              </div>
+              <div class="input-group input-group-sm xs-mb-15"><span class="input-group-addon">Description</span>
+                <input type="text" placeholder="Description" class="form-control">
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Select the type of item</label>
+                <div class="col-sm-6">
+                  <div class="be-radio has-success inline">
+                    <input type="radio" checked="" name="rad3" id="radinsucc">
+                    <label for="radinsucc">Video</label>
+                  </div>
+                  <div class="be-radio has-warning inline">
+                    <input type="radio" name="rad3" id="radinwarn">
+                    <label for="radinwarn">Image</label>
+                  </div>
+                  <div class="be-radio has-danger inline">
+                    <input type="radio" name="rad3" id="radindang">
+                    <label for="radindang">Miscellaneous</label>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <button class="btn btn-rounded btn-space btn-success"><i class="icon icon-left mdi mdi-check"></i> Upload</button>
+
             </div>
-          </form>
+          </div>
+
+          <br><br>
+          <br><br>
+
+          <div class="tab-container">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#home5" data-toggle="tab"><span class="icon mdi mdi-home"></span>Videos</a></li>
+              <li><a href="#profile5" data-toggle="tab"><span class="icon mdi mdi-face"></span>Images</a></li>
+              <li><a href="#messages5" data-toggle="tab"><span class="icon mdi mdi-email"></span>Miscellaneous</a></li>
+            </ul>
+            <div class="tab-content">
+              <div id="home5" class="tab-pane active cont">
+
+                <div id="accordion1" class="panel-group accordion">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse11"><i class="icon mdi mdi-chevron-down"></i> Item 1</a></h4>
+                  </div>
+                  <div id="collapse11" class="panel-collapse collapse ">
+                    <div class="panel-body">A short description of the item and its content</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse12"><i class="icon mdi mdi-chevron-down"></i> Item 2</a></h4>
+                  </div>
+                  <div id="collapse12" class="panel-collapse collapse ">
+                    <div class="panel-body">A short description of the item and its content</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse13"><i class="icon mdi mdi-chevron-down"></i> Item 3</a></h4>
+                  </div>
+                  <div id="collapse13" class="panel-collapse collapse ">
+                    <div class="panel-body">A short description of the item and its content</div>
+                  </div>
+                </div>
+              </div>
+
+
+              </div>
+              <div id="profile5" class="tab-pane cont">
+                
+                
+                <div id="accordion1" class="panel-group accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse21"><i class="icon mdi mdi-chevron-down"></i> Item 1</a></h4>
+                    </div>
+                    <div id="collapse21" class="panel-collapse collapse ">
+                      <div class="panel-body">A short description of the item and its content</div>
+                    </div>
+                  </div>
+  
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse22"><i class="icon mdi mdi-chevron-down"></i> Item 2</a></h4>
+                    </div>
+                    <div id="collapse22" class="panel-collapse collapse ">
+                      <div class="panel-body">A short description of the item and its content</div>
+                    </div>
+                  </div>
+  
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse23"><i class="icon mdi mdi-chevron-down"></i> Item 3</a></h4>
+                    </div>
+                    <div id="collapse23" class="panel-collapse collapse ">
+                      <div class="panel-body">A short description of the item and its content</div>
+                    </div>
+                  </div>
+                </div>
+
+              
+              </div>
+
+              <div id="messages5" class="tab-pane">
+                
+                
+                <div id="accordion1" class="panel-group accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse31"><i class="icon mdi mdi-chevron-down"></i> Item 1</a></h4>
+                    </div>
+                    <div id="collapse31" class="panel-collapse collapse ">
+                      <div class="panel-body">A short description of the item and its content</div>
+                    </div>
+                  </div>
+  
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse32"><i class="icon mdi mdi-chevron-down"></i> Item 2</a></h4>
+                    </div>
+                    <div id="collapse32" class="panel-collapse collapse ">
+                      <div class="panel-body">A short description of the item and its content</div>
+                    </div>
+                  </div>
+  
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse33"><i class="icon mdi mdi-chevron-down"></i> Item 3</a></h4>
+                    </div>
+                    <div id="collapse33" class="panel-collapse collapse ">
+                      <div class="panel-body">A short description of the item and its content</div>
+                    </div>
+                  </div>
+                </div>
+
+              
+              </div>
+            </div>
+          </div>
+
+          
+
+
         </div>
         
       </div>
 
       </div>
     
-    
+      
+
     <script src="{% static 'lib/dropzone/dist/dropzone.js' %}" type="text/javascript"></script>
     <script src="{% static 'lib/jquery/jquery.min.js' %}" type="text/javascript"></script>
     <script src="{% static 'lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js' %}" type="text/javascript"></script>
     <script src="{% static 'js/main.js' %}" type="text/javascript"></script>
     <script src="{% static 'lib/bootstrap/dist/js/bootstrap.min.js'  %}" type="text/javascript"></script>
-    <!-- <script src="assets/lib/jquery-flot/jquery.flot.js" type="text/javascript"></script>
-    <script src="assets/lib/jquery-flot/jquery.flot.pie.js" type="text/javascript"></script>
-    <script src="assets/lib/jquery-flot/jquery.flot.resize.js" type="text/javascript"></script>
-    <script src="assets/lib/jquery-flot/plugins/jquery.flot.orderBars.js" type="text/javascript"></script>
-    <script src="assets/lib/jquery-flot/plugins/curvedLines.js" type="text/javascript"></script>
-    <script src="assets/lib/jquery.sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
-    <script src="assets/lib/countup/countUp.min.js" type="text/javascript"></script> -->
     <script src="{% static 'lib/jquery-ui/jquery-ui.min.js' %}" type="text/javascript"></script>
-    <!-- <script src="assets/lib/jqvmap/jquery.vmap.min.js" type="text/javascript"></script>
-    <script src="assets/lib/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script> -->
     <script src="{% static 'js/app-dashboard.js' %}" type="text/javascript"></script>
     <script type="text/javascript">
       $(document).ready(function(){
@@ -118,5 +267,37 @@
       
       });
     </script>
+
+
+  <script>
+
+  $( document ).ready(function() {
+    document.getElementById("uploadcontainer").style.display = "none";
+    document.getElementById("searchcontainer").style.display = "none";
+  });
+
+  </script>
+
+  <script>
+    function uploaditem() {
+      var x = document.getElementById("uploadcontainer");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    function searchitem() {
+      var x = document.getElementById("searchcontainer");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+      
+    }
+  </script>
+
   </body>
 </html>

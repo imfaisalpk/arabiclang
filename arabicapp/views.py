@@ -21,3 +21,12 @@ def grammar(request):
     return render(request,'home.html')
 def speaking(request):
     return render(request,'home.html')
+
+
+#Create Lesson
+
+def create_lesson(request):
+    return render(request,'create_lesson.html')
+
+def add_lesson(request):
+    return render(request,'add_lesson.html')
