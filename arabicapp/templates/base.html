@@ -1,0 +1,27 @@
+{% block urls %}
+
+<div class="be-left-sidebar">
+  <div class="left-sidebar-wrapper"><a href="#" class="left-sidebar-toggle">Dashboard</a>
+    <div class="left-sidebar-spacer">
+      <div class="left-sidebar-scroll">
+        <div class="left-sidebar-content">
+          <ul class="sidebar-elements">
+            <li class="divider">Menu</li>
+            <li class="active"><a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
+            </li>
+            <li class="parent"><a href="{% url 'listening' %}"><i class="icon mdi mdi-face"></i><span>Listening Module</span></a>
+            </li>
+            <li class="parent"><a href="{% url 'reading' %}"><i class="icon mdi mdi-face"></i><span>Reading Module</span></a>
+            </li>
+            <li class="parent"><a href="{% url 'grammar' %}"><i class="icon mdi mdi-face"></i><span>Grammar Module</span></a>
+            </li>
+            <li class="parent"><a href="{% url 'speaking' %}"><i class="icon mdi mdi-face"></i><span>Speaking Module</span></a>
+            </li>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+{% endblock %}

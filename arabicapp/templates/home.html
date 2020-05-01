@@ -1,0 +1,170 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{% static 'img/navy.png' %}">
+
+    <title>Arabic Lang - PN</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'lib/perfect-scrollbar/css/perfect-scrollbar.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'lib/material-design-icons/css/material-design-iconic-font.min.css' %}"/><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- <link rel="stylesheet" type="text/css" href="media/arabicapp/static/lib/jquery.vectormap/jquery-jvectormap-1.2.2.css"/>
+    <link rel="stylesheet" type="text/css" href="media/arabicapp/static/lib/jqvmap/jqvmap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="media/arabicapp/static/lib/datetimepicker/css/bootstrap-datetimepicker.min.css"/> -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css"/>
+  </head>
+  <body>
+    <div class="be-wrapper be-fixed-sidebar">
+      <nav class="navbar navbar-default navbar-fixed-top be-top-header">
+        <div class="container-fluid">
+          <!-- <div class="navbar-header"><a href="index.html" class="navbar-brand"></a></div> -->
+          <div class="be-right-navbar">
+            <ul class="nav navbar-nav navbar-right be-user-nav">
+              
+            </ul>
+            <div class="page-title"><span>Dashboard</span></div>
+            <ul class="nav navbar-nav navbar-right be-icons-nav">
+              <li class="dropdown"><a href="#" role="button" aria-expanded="false" class="be-toggle-right-sidebar"><span class="icon mdi mdi-settings"></span></a></li>
+              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><span class="icon mdi mdi-notifications"></span><span class="indicator"></span></a>
+                
+              </li>
+              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><span class="icon mdi mdi-apps"></span></a>
+                <ul class="dropdown-menu be-connections">
+                 
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="be-left-sidebar">
+        <div class="left-sidebar-wrapper"><a href="#" class="left-sidebar-toggle">Dashboard</a>
+          <div class="left-sidebar-spacer">
+            <div class="left-sidebar-scroll">
+              <div class="left-sidebar-content">
+                <ul class="sidebar-elements">
+                  <li class="divider">Menu</li>
+                  <li class="active"><a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
+                  </li>
+                  <li class="parent"><a href="{% url 'listening' %}"><i class="icon mdi mdi-face"></i><span>Listening Module</span></a>
+                  </li>
+                  <li class="parent"><a href="{% url 'reading' %}"><i class="icon mdi mdi-face"></i><span>Reading Module</span></a>
+                  </li>
+                  <li class="parent"><a href="{% url 'grammar' %}"><i class="icon mdi mdi-face"></i><span>Grammar Module</span></a>
+                  </li>
+                  <li class="parent"><a href="{% url 'speaking' %}"><i class="icon mdi mdi-face"></i><span>Speaking Module</span></a>
+                  </li>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="be-content">
+        <div class="main-content container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                        <div class="widget widget-tile">
+                            <h1>Listening Module</h1>
+                        </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                        <div class="widget widget-tile">
+                            <h1>Reading Module</h1>
+
+                        </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                        <div class="widget widget-tile">
+                            <h1>Grammar Module</h1>
+
+                        </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                        <div class="widget widget-tile">
+                            <h1>Speaking Module</h1>
+
+                        </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="widget widget-fullwidth be-loading">
+                <div class="widget-head">
+                  
+                  <div class="button-toolbar hidden-xs">
+                    
+                  </div><span class="title">Recent Activities</span>
+                </div>
+                <div class="main-content container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="timeline">
+                <li class="timeline-item">
+                  <div class="timeline-date"><span>September 16, 2016</span></div>
+                  <div class="timeline-content">
+                    <div class="timeline-avatar"><img src="media/arabicapp/static/img/avatar6.png" alt="Avatar" class="circle"></div>
+                    <div class="timeline-header"><span class="timeline-time">4:34 PM</span><span class="timeline-autor">Admin</span>
+                      <p class="timeline-activity">Added a video in Lesson 1.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-item timeline-item-detailed">
+                  <div class="timeline-date"><span>September 13, 2016</span></div>
+                  <div class="timeline-content">
+                    <div class="timeline-avatar"><img src="media/arabicapp/static/img/avatar.png" alt="Avatar" class="circle"></div>
+                    <div class="timeline-header"><span class="timeline-time">9:54 AM</span><span class="timeline-autor">User 1  </span>
+                      <p class="timeline-activity">made a comment on the video of Lesson 1.</p>
+                      <div class="timeline-summary">
+                        <p>Suspendisse ac libero sed mauris tempor vehicula porttitor non sapien. Aliquam viver... </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-item timeline-item-detailed timeline-item-gallery">
+                  <div class="timeline-date"><span>August 23, 2016</span></div>
+                  <div class="timeline-content">
+                    <div class="timeline-avatar"><img src="media/arabicapp/static/img/avatar3.png" alt="Avatar" class="circle"></div>
+                    <div class="timeline-header"><span class="timeline-time">10:42 AM</span><span class="timeline-autor">Admin  </span>
+                      <p class="timeline-activity">Added new images in the Lesson 1.</p>
+                      <div class="timeline-gallery"><img src="media/arabicapp/static/img/gallery/img2.jpg" alt="Thumbnail" class="gallery-thumbnail"><img src="media/arabicapp/static/img/gallery/img4.jpg" alt="Thumbnail" class="gallery-thumbnail"><img src="media/arabicapp/static/img/gallery/img11.jpg" alt="Thumbnail" class="gallery-thumbnail"><img src="media/arabicapp/static/img/gallery/img12.jpg" alt="Thumbnail" class="gallery-thumbnail"></div>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="timeline-item timeline-loadmore"><a href="#" class="load-more-btn">Load more</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+                
+              </div>
+            </div>
+          </div>
+           
+    </div>
+    <script src="{% static 'lib/jquery/jquery.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/main.js' %}" type="text/javascript"></script>
+    <script src="{% static 'lib/bootstrap/dist/js/bootstrap.min.js'  %}" type="text/javascript"></script>
+    <script src="{% static 'lib/jquery-ui/jquery-ui.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/app-dashboard.js' %}" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      	//initialize the javascript
+      	App.init();
+      	App.dashboard();
+      
+      });
+    </script>
+  </body>
+</html>
