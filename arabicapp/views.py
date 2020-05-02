@@ -30,3 +30,6 @@ def create_lesson(request):
 
 def add_lesson(request):
     return render(request,'add_lesson.html')
+
+def add_media(request):
+    return render(request,'add_media.html')
