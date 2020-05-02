@@ -15,5 +15,9 @@ urlpatterns=[
     path('speaking',views.speaking, name="speaking"),
 
     path('add/lesson/',views.add_lesson, name="add_lesson"), # create lesson
+
+
+
+
     
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

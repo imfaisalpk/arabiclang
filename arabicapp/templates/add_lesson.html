@@ -2,279 +2,240 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="{% static 'img/navy.png' %}">
 
-    <title>Arabic Lang - PN</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'lib/perfect-scrollbar/css/perfect-scrollbar.min.css' %}"/>
-    <link rel="stylesheet" type="text/css" href="{% static 'lib/material-design-icons/css/material-design-iconic-font.min.css' %}"/><!--[if lt IE 9]>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="{% static 'img/navy.png' %}">
+
+  <title>Arabic Lang - PN</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'lib/perfect-scrollbar/css/perfect-scrollbar.min.css' %}" />
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'lib/material-design-icons/css/material-design-iconic-font.min.css' %}" />
+  <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- <link rel="stylesheet" type="text/css" href="assets/lib/jquery.vectormap/jquery-jvectormap-1.2.2.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="assets/lib/jquery.vectormap/jquery-jvectormap-1.2.2.css"/>
     <link rel="stylesheet" type="text/css" href="assets/lib/jqvmap/jqvmap.min.css"/>
     <link rel="stylesheet" type="text/css" href="assets/lib/datetimepicker/css/bootstrap-datetimepicker.min.css"/> -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css"/>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
 
 
-  </head>
-  <body>
-    <div class="be-wrapper be-fixed-sidebar">
-      <nav class="navbar navbar-default navbar-fixed-top be-top-header">
-        <div class="container-fluid">
-          <!-- <div class="navbar-header"><a href="index.html" class="navbar-brand"></a></div> -->
-          <div class="be-right-navbar">
-            <ul class="nav navbar-nav navbar-right be-user-nav">
-              
-            </ul>
-            <div class="page-title"><span>Dashboard</span></div>
-            <ul class="nav navbar-nav navbar-right be-icons-nav">
-              <li class="dropdown"><a href="#" role="button" aria-expanded="false" class="be-toggle-right-sidebar"><span class="icon mdi mdi-settings"></span></a></li>
-              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><span class="icon mdi mdi-notifications"></span><span class="indicator"></span></a>
-                
-              </li>
-              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><span class="icon mdi mdi-apps"></span></a>
-                <ul class="dropdown-menu be-connections">
-                 
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="be-left-sidebar">
-        <div class="left-sidebar-wrapper"><a href="#" class="left-sidebar-toggle">Dashboard</a>
-          <div class="left-sidebar-spacer">
-            <div class="left-sidebar-scroll">
-              <div class="left-sidebar-content">
-                <ul class="sidebar-elements">
-                  <li class="divider">Menu</li>
-                  <li class="active"><a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
-                  </li>
-                  <li class="parent"><a href="#"><i class="icon mdi mdi-face"></i><span>Listening Module</span></a>
-                  </li>
-                  <li class="parent"><a href="#"><i class="icon mdi mdi-face"></i><span>Reading Module</span></a>
-                  </li>
-                  <li class="parent"><a href="#"><i class="icon mdi mdi-face"></i><span>Grammar Module</span></a>
-                  </li>
-                  <li class="parent"><a href="#"><i class="icon mdi mdi-face"></i><span>Speaking Module</span></a>
-                  </li>
-              </div>
-            </div>
-          </div>
-          
+</head>
+
+<body>
+  <div class="be-wrapper be-fixed-sidebar">
+    <nav class="navbar navbar-default navbar-fixed-top be-top-header">
+      <div class="container-fluid">
+        <!-- <div class="navbar-header"><a href="index.html" class="navbar-brand"></a></div> -->
+        <div class="be-right-navbar">
+          <ul class="nav navbar-nav navbar-right be-user-nav">
+
+          </ul>
+          <div class="page-title"><span>Dashboard</span></div>
+          <ul class="nav navbar-nav navbar-right be-icons-nav">
+            <li class="dropdown"><a href="#" role="button" aria-expanded="false" class="be-toggle-right-sidebar"><span
+                  class="icon mdi mdi-settings"></span></a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+                class="dropdown-toggle"><span class="icon mdi mdi-notifications"></span><span
+                  class="indicator"></span></a>
+
+            </li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+                class="dropdown-toggle"><span class="icon mdi mdi-apps"></span></a>
+              <ul class="dropdown-menu be-connections">
+
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-      
-      <div class="be-content">
-        <div class="page-head">
-          <h2 class="page-head-title">Lesson <span id="lesson_number"> 1</span></h2>
-          <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Modules</a></li>
-            <li><a href="#">Listening</a></li>
-            <li class="active">Lesson <span id="lesson_number"> 1</span></li>
-          </ol>
-        </div>
-        
-
-        <div class="main-content container-fluid">
-          
-          <button class="btn btn-rounded btn-space btn-primary" onclick="uploaditem()"><i class="icon icon-left mdi mdi-cloud-done"></i> Upload an item</button>
-          <button class="btn btn-rounded btn-space btn-danger"><i class="icon icon-left mdi mdi-alert-circle"></i> Delete an Item</button>
-          <button class="btn btn-rounded btn-space btn-success" onclick="searchitem()"><i class="icon icon-left mdi mdi-check"></i> Search an Item</button>
-          
-          
-          <div class="input-group xs-mb-15" id="searchcontainer">
-            <input type="text" class="form-control"><span class="input-group-btn">
-              <button type="button" class="btn btn-primary">Go!</button></span>
+    </nav>
+    <div class="be-left-sidebar">
+      <div class="left-sidebar-wrapper"><a href="#" class="left-sidebar-toggle">Dashboard</a>
+        <div class="left-sidebar-spacer">
+          <div class="left-sidebar-scroll">
+            <div class="left-sidebar-content">
+              <ul class="sidebar-elements">
+                <li class="divider">Menu</li>
+                <li class="active"><a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
+                </li>
+                <li class="parent"><a href="#"><i class="icon mdi mdi-face"></i><span>Listening Module</span></a>
+                </li>
+                <li class="parent"><a href="#"><i class="icon mdi mdi-face"></i><span>Reading Module</span></a>
+                </li>
+                <li class="parent"><a href="#"><i class="icon mdi mdi-face"></i><span>Grammar Module</span></a>
+                </li>
+                <li class="parent"><a href="#"><i class="icon mdi mdi-face"></i><span>Speaking Module</span></a>
+                </li>
+            </div>
           </div>
+        </div>
 
-          <div id="uploadcontainer">
-            <div class="panel-body">
-              <div class="input-group input-group-sm xs-mb-15"><span class="input-group-addon">Name</span>
-                <input type="text" placeholder="Name" class="form-control">
-              </div>
-              <div class="input-group input-group-sm xs-mb-15"><span class="input-group-addon">Description</span>
-                <input type="text" placeholder="Description" class="form-control">
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label">Select the type of item</label>
-                <div class="col-sm-6">
-                  <div class="be-radio has-success inline">
-                    <input type="radio" checked="" name="rad3" id="radinsucc">
-                    <label for="radinsucc">Video</label>
+      </div>
+    </div>
+
+    <div class="be-content">
+      <div class="page-head">
+        <h2 class="page-head-title">Lesson <span id="lesson_number"> 1</span></h2>
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Modules</a></li>
+          <li><a href="#">Beginner</a></li>
+          <li class="active">Lesson <span id="lesson_number"> 1</span></li>
+        </ol>
+      </div>
+
+
+      <div class="main-content container-fluid">
+
+        <div class="row">
+          <div class="col-sm-12">
+
+            <div class="panel panel-default">
+              <div class="panel-heading panel-heading-divider">Create Lesson<span class="panel-subtitle">These are the default
+                lesson creation tools.</span></div>
+
+              <div class="panel-body">
+
+                <form action="" style="border-radius: 0px;" class="form-horizontal group-border-dashed" >
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Lesson No.</label>
+                    <div class="col-sm-6">
+                      <select class="form-control">
+                        <option>Lesson 1</option>
+                        <option>Lesson 2</option>
+                        <option>Lesson 3</option>
+                        <option>Lesson 4</option>
+                        <option>Lesson 5</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="be-radio has-warning inline">
-                    <input type="radio" name="rad3" id="radinwarn">
-                    <label for="radinwarn">Image</label>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Lesson Level</label>
+                    <div class="col-sm-6">
+                      <select class="form-control">
+                        <option>Begginer</option>
+                        <option>Intermediate</option>
+                        <option>Advance</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="be-radio has-danger inline">
-                    <input type="radio" name="rad3" id="radindang">
-                    <label for="radindang">Miscellaneous</label>
+
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Title</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control">
+                    </div>
                   </div>
+  
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Description</label>
+                    <div class="col-sm-6">
+                      <textarea class="form-control"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Select the type of item</label>
+                    <div class="col-sm-6">
+                      <div class="be-radio has-success inline">
+                        <input type="radio" checked="" name="rad3" id="radinvideo">
+                        <label for="radinvideo">Video</label>
+                      </div>
+                      <div class="be-radio has-warning inline">
+                        <input type="radio" name="rad3" id="radinaudio">
+                        <label for="radinaudio">Audio</label>
+                      </div>
+                      <div class="be-radio has-warning inline">
+                        <input type="radio" name="rad3" id="radinanima">
+                        <label for="radinanima">Animation</label>
+                      </div>
+                      <div class="be-radio has-warning inline">
+                        <input type="radio" name="rad3" id="radinimg">
+                        <label for="radinimg">Image</label>
+                      </div>
+                      <div class="be-radio has-danger inline">
+                        <input type="radio" name="rad3" id="radinmisc">
+                        <label for="radinmisc">Miscellaneous</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12">
+                    <p class="text-right">
+                      <button class="btn btn-space btn-primary btn-lg"><i class="icon icon-left mdi mdi-upload"></i> Upload Media</button>
+                      <button class="btn btn-space btn-success btn-lg"><i class="icon icon-left mdi mdi-plus"></i> Add Lesson</button>
+                      <!-- <button class="btn btn-space btn-primary btn-lg"><i class="icon icon-left mdi mdi-"></i> Cancel</button> -->
+                     
+                    </p>
+                  </div>
+                  <!-- <br> -->
+                  <!-- <button class="btn btn-rounded btn-space btn-success"><i class="icon icon-left mdi mdi-check"></i>
+                    Upload</button> -->
+  
                 </div>
-              </div>
-              <br>
-              <button class="btn btn-rounded btn-space btn-success"><i class="icon icon-left mdi mdi-check"></i> Upload</button>
+                </form>
 
             </div>
           </div>
+        </div>
 
-          <br><br>
-          <br><br>
 
-          <div class="tab-container">
-            <ul class="nav nav-tabs">
-              <li class="active"><a href="#home5" data-toggle="tab"><span class="icon mdi mdi-home"></span>Videos</a></li>
-              <li><a href="#profile5" data-toggle="tab"><span class="icon mdi mdi-face"></span>Images</a></li>
-              <li><a href="#messages5" data-toggle="tab"><span class="icon mdi mdi-email"></span>Miscellaneous</a></li>
-            </ul>
-            <div class="tab-content">
-              <div id="home5" class="tab-pane active cont">
-
-                <div id="accordion1" class="panel-group accordion">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse11"><i class="icon mdi mdi-chevron-down"></i> Item 1</a></h4>
-                  </div>
-                  <div id="collapse11" class="panel-collapse collapse ">
-                    <div class="panel-body">A short description of the item and its content</div>
-                  </div>
-                </div>
-
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse12"><i class="icon mdi mdi-chevron-down"></i> Item 2</a></h4>
-                  </div>
-                  <div id="collapse12" class="panel-collapse collapse ">
-                    <div class="panel-body">A short description of the item and its content</div>
-                  </div>
-                </div>
-
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse13"><i class="icon mdi mdi-chevron-down"></i> Item 3</a></h4>
-                  </div>
-                  <div id="collapse13" class="panel-collapse collapse ">
-                    <div class="panel-body">A short description of the item and its content</div>
-                  </div>
-                </div>
-              </div>
-
+        <div class="row">
+          <div class="col-sm-9">
+            <div class="panel panel-default">
+              <div class="panel-heading panel-heading-divider">Lessons Created</div>
+              <div class="panel-body">
 
               </div>
-              <div id="profile5" class="tab-pane cont">
-                
-                
-                <div id="accordion1" class="panel-group accordion">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse21"><i class="icon mdi mdi-chevron-down"></i> Item 1</a></h4>
-                    </div>
-                    <div id="collapse21" class="panel-collapse collapse ">
-                      <div class="panel-body">A short description of the item and its content</div>
-                    </div>
-                  </div>
-  
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse22"><i class="icon mdi mdi-chevron-down"></i> Item 2</a></h4>
-                    </div>
-                    <div id="collapse22" class="panel-collapse collapse ">
-                      <div class="panel-body">A short description of the item and its content</div>
-                    </div>
-                  </div>
-  
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse23"><i class="icon mdi mdi-chevron-down"></i> Item 3</a></h4>
-                    </div>
-                    <div id="collapse23" class="panel-collapse collapse ">
-                      <div class="panel-body">A short description of the item and its content</div>
-                    </div>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="panel panel-default">
+              <div class="panel-heading panel-heading-divider">Total Lessons</div>
+              <div class="panel-body">
 
-              
-              </div>
-
-              <div id="messages5" class="tab-pane">
-                
-                
-                <div id="accordion1" class="panel-group accordion">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse31"><i class="icon mdi mdi-chevron-down"></i> Item 1</a></h4>
-                    </div>
-                    <div id="collapse31" class="panel-collapse collapse ">
-                      <div class="panel-body">A short description of the item and its content</div>
-                    </div>
-                  </div>
-  
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse32"><i class="icon mdi mdi-chevron-down"></i> Item 2</a></h4>
-                    </div>
-                    <div id="collapse32" class="panel-collapse collapse ">
-                      <div class="panel-body">A short description of the item and its content</div>
-                    </div>
-                  </div>
-  
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapse33"><i class="icon mdi mdi-chevron-down"></i> Item 3</a></h4>
-                    </div>
-                    <div id="collapse33" class="panel-collapse collapse ">
-                      <div class="panel-body">A short description of the item and its content</div>
-                    </div>
-                  </div>
-                </div>
-
-              
               </div>
             </div>
           </div>
 
-          
-
-
         </div>
-        
       </div>
+    </div>
+  </div>
 
-      </div>
-    
-      
 
-    <script src="{% static 'lib/dropzone/dist/dropzone.js' %}" type="text/javascript"></script>
-    <script src="{% static 'lib/jquery/jquery.min.js' %}" type="text/javascript"></script>
-    <script src="{% static 'lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js' %}" type="text/javascript"></script>
-    <script src="{% static 'js/main.js' %}" type="text/javascript"></script>
-    <script src="{% static 'lib/bootstrap/dist/js/bootstrap.min.js'  %}" type="text/javascript"></script>
-    <script src="{% static 'lib/jquery-ui/jquery-ui.min.js' %}" type="text/javascript"></script>
-    <script src="{% static 'js/app-dashboard.js' %}" type="text/javascript"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-      	//initialize the javascript
-      	App.init();
-      	App.dashboard();
-      
-      });
-    </script>
+  <script src="{% static 'lib/dropzone/dist/dropzone.js' %}" type="text/javascript"></script>
+  <script src="{% static 'lib/jquery/jquery.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/main.js' %}" type="text/javascript"></script>
+  <script src="{% static 'lib/bootstrap/dist/js/bootstrap.min.js'  %}" type="text/javascript"></script>
+  <script src="{% static 'lib/jquery-ui/jquery-ui.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/app-dashboard.js' %}" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      //initialize the javascript
+      App.init();
+      App.dashboard();
+
+    });
+  </script>
 
 
   <script>
 
-  $( document ).ready(function() {
-    document.getElementById("uploadcontainer").style.display = "none";
-    document.getElementById("searchcontainer").style.display = "none";
-  });
+    $(document).ready(function () {
+      document.getElementById("uploadcontainer").style.display = "none";
+      document.getElementById("searchcontainer").style.display = "none";
+    });
 
   </script>
 
@@ -295,9 +256,10 @@
       } else {
         x.style.display = "block";
       }
-      
+
     }
   </script>
 
-  </body>
+</body>
+
 </html>
