@@ -18,6 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('arabicapp/',include('arabicapp.urls')),
+    # path('jet/', include('jet.urls', 'jet')),
     path('admin/', admin.site.urls),
 
 ]
