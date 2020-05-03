@@ -1,0 +1,82 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="{% static 'img/navy.png' %}">
+  <title>Arabic Lang - PN</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'lib/perfect-scrollbar/css/perfect-scrollbar.min.css' %}" />
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'lib/material-design-icons/css/material-design-iconic-font.min.css' %}" />
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
+  <style>
+    body {
+      background-image: url('{% static "/img/bg1.jpg" %}');
+      /* background-repeat: no-repeat; */
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body class="be-splash-screen">
+  <div class="be-wrapper be-login">
+    <div class="be-content">
+      <div class="main-content container-fluid">
+        <div class="splash-container">
+
+          
+
+
+          <div class="panel panel-default panel-border-color panel-border-color-primary">
+              <div class="panel-heading"><img src="{% static 'img/navy.png' %}" alt="logo" width="102" height="127" class="logo-img"><span class="splash-description">Please enter your user information.</span></div>
+              <div class="panel-body">
+
+                <a href="/admin/">
+                  <div class="col-xs-50 col-md-24 col-lg-12" >
+                    <div class="widget widget-tile" style="background-color: green; color: white;">
+                      <h1 style="text-align: center;">Teacher</h1>
+      
+                    </div>
+                  </div>
+                </a>
+                <a href="{% url 'home' %}">
+                  <div class="col-xs-50 col-md-24 col-lg-12" >
+                    <div class="widget widget-tile" style="background-color: blue; color: white;">
+                      <h1 style="text-align: center;">Student</h1>
+      
+                    </div>
+                  </div>
+                </a>
+                
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{% static 'lib/jquery/jquery.min.js'%}" type="text/javascript"></script>
+  <script src="{% static 'lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/main.js' %}" type="text/javascript"></script>
+  <script src="{% static 'lib/bootstrap/dist/js/bootstrap.min.js' %}" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      //initialize the javascript
+      App.init();
+    });
+
+  </script>
+</body>
+
+</html>

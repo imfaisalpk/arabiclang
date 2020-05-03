@@ -8,7 +8,7 @@ class Lesson(models.Model):
     LESSON_TYPES = (
         ('LISTENING','LISTENING'),
         ('READING','READING'),
-        ('WRTING','WRTING'),
+        ('WRITING','WRITING'),
         ('SPEAKING','SPEAKING'),
         ('MISCELLANEOUS','MISCELLANEOUS'),
 
